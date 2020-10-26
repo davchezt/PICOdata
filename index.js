@@ -49,6 +49,7 @@ app.set("json spaces", 2); // pretty print
 
 app.use("/", indexControllers);
 app.use("/api", apiController);
+app.use("/uploads", express.static("uploads"));
 
 // Handle 404
 app.use((req, res, next) => {
